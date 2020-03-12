@@ -15,23 +15,23 @@
         [textArray addObject:[NSString stringWithFormat:@"%d",i]];
     }
     //半圆仪表相关配置
-    self.circleView.textArray = textArray;
-    self.circleView.textAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:10.0],NSForegroundColorAttributeName:[UIColor redColor]};
+    self.meterView.textArray = textArray;
+    self.meterView.textAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:10.0],NSForegroundColorAttributeName:[UIColor redColor]};
     //内容弧度
-    self.circleView.radian = [LOMeterView radiansForAngle:240.0];
+    self.meterView.radian = [LOMeterView radiansForAngle:240.0];
     //字符间隔
-    self.circleView.characterSpacing = 0.85;
+    self.meterView.characterSpacing = 0.85;
     //圆半径
-    self.circleView.roundRadius = 90;
+    self.meterView.roundRadius = 90;
     //文本半径
-    self.circleView.textRadius = 80;
+    self.meterView.textRadius = 80;
     //刻度长
-    self.circleView.roundLineWidth = 8.0;
+    self.meterView.roundLineWidth = 8.0;
     //圆心
-    self.circleView.circleCenterPoint = CGPointMake(self.circleView.bounds.size.width/2, self.circleView.bounds.size.height/2+20);
+    self.meterView.circleCenterPoint = CGPointMake(self.meterView.bounds.size.width/2, self.meterView.bounds.size.height/2+20);
     
     //监听
-    [self.circleView setProgressBlock:^(CGFloat progress) {
+    [self.meterView setProgressBlock:^(CGFloat progress) {
         NSLog(@"当前数值比率 = %.2f",progress);
     }];
 ```
