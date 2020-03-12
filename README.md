@@ -3,7 +3,7 @@
 
 ### 演示：
 （录制视频转gif为了压缩体积，所以看上去模糊且有卡顿）
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200312145731869.gif)
+![在这里插入图片描述](https://github.com/laoou002/LOMeterView/blob/master/boke002.gif)
 
 ### 使用方法：
 ```objc
