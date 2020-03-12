@@ -1,9 +1,13 @@
 # LOMeterView
 半圆数值标尺、可做战斗力表、汽车速度仪表等
 
+### 演示：
+（录制视频转gif为了压缩体积，所以看上去模糊且有卡顿）
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200312145731869.gif)
+
 ### 使用方法：
 ```objc
-	//文本数组
+    //文本数组
     NSUInteger maxNumber = 240;
     NSMutableArray *textArray = [[NSMutableArray alloc] init];
     for (int i=0; i<=maxNumber; i=i+20) {
